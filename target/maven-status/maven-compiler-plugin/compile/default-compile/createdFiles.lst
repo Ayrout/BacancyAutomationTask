@@ -1,0 +1,8 @@
+com\bacancyTechnology\refinedDataApp\pages\EnvironmentalRiskManagementPage.class
+com\bacanyTechnology\refinedDataApp\util\ExcelReader.class
+com\bacancyTechnology\refinedDataApp\pages\PropertyListPage.class
+com\bacanyTechnology\refinedDataApp\base\TestBase.class
+com\bacanyTechnology\refinedDataApp\util\ExtentReportListener.class
+com\bacancyTechnology\refinedDataApp\pages\LoginPage.class
+com\bacanyTechnology\refinedDataApp\util\CustomListener.class
+com\bacanyTechnology\refinedDataApp\util\TestUtils.class
