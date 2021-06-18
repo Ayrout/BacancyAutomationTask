@@ -64,7 +64,7 @@ public class CRUDOperationTest extends TestBase
 		environmentalRiskManagementPage.clickOnSaveBtnAndCheckNotification("Successfully saved record");
 	}
 	
-	@Test(priority = 2,dataProvider = "testdata",dataProviderClass = ExcelReader.class)
+	@Test(priority = 2,dependsOnMethods = {"createAnEnvironmentalReport"},dataProvider = "testdata",dataProviderClass = ExcelReader.class)
 	public void updateEnvironmentalReport(Map<String, String> map)
 	{
 		environmentalRiskManagementPage = new EnvironmentalRiskManagementPage();
@@ -76,7 +76,7 @@ public class CRUDOperationTest extends TestBase
 		environmentalRiskManagementPage.clickOnUpdateBtnAndCheckNotification("Successfully updated record");
 	}
 	
-	@Test(priority = 3,dataProvider = "testdata",dataProviderClass = ExcelReader.class)
+	@Test(priority = 3,dependsOnMethods = {"createAnEnvironmentalReport","updateEnvironmentalReport"},dataProvider = "testdata",dataProviderClass = ExcelReader.class)
 	public void deleteEnvironmentalReport(Map<String, String> map)
 	{
 		environmentalRiskManagementPage = new EnvironmentalRiskManagementPage();
@@ -90,7 +90,7 @@ public class CRUDOperationTest extends TestBase
 	@AfterMethod
 	public void logout()
 	{
-		environmentalRiskManagementPage.logout();
+		//environmentalRiskManagementPage.logout();
 	}
 	
 	@AfterClass

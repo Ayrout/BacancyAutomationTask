@@ -6,9 +6,9 @@
       <class name="com.bacancyTechnology.refinedDataApp.testcases.CRUDOperationTest">
         <methods>
           <include name="setUp"/>
-          <include name="updateEnvironmentalReport" invocation-numbers="0"/>
+          <include name="updateEnvironmentalReport"/>
           <include name="quit"/>
-          <include name="createAnEnvironmentalReport" invocation-numbers="0"/>
+          <include name="createAnEnvironmentalReport"/>
           <include name="deleteEnvironmentalReport"/>
           <include name="launchAndLogin"/>
           <include name="logout"/>
